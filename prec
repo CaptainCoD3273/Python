@@ -1,0 +1,28 @@
+'''
+use = "god yes"
+use = use[::-1]
+
+print(use)
+'''
+
+'''
+lt = ["gog","apple","fortune"]
+
+print(len(lt))
+'''
+
+
+
+def spin_words(sentence):
+    # Your code goes here
+    lt = sentence.split()
+    for x in range(len(lt)):
+        if len(lt[x]) >= 5:
+            #lt[x] = func(lt[x])
+            lt[x] = ((lt[x])[::-1])
+    sentence = " ".join(lt)
+    print(sentence)
+        
+    return None
+
+spin_words("Hey Fellow Warriors")
